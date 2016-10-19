@@ -1,0 +1,34 @@
+application: helloworld
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: index.php
+- url: /text1.php
+  script: text1.php
+- url: /encrypt.php
+  script: encrypt.php
+- url: /decrypt.php
+  script: decrypt.php
+- url: /palin.php
+  script: palin.php
+- url: /urlfetch.php
+  script: urlfetch.php
+- url: /hashing.php
+  script: hashing.php
+- url: /index.php
+  script: index.php
+- url: /textstatistics.php
+  script: textstatistics.php
+
+env_variables:
+ DEVELOPMENT_DB_HOST: ''
+ DEVELOPMENT_DB_USERNAME: 'root'
+ DEVELOPMENT_DB_PASSWORD: ''
+ DEVELOPMENT_DB_NAME: 'guestbook'
+ PRODUCTION_CLOUD_SQL_INSTANCE: '/cloudsql/guestbook:my-cloudsql-instance'
+ PRODUCTION_DB_USERNAME: ''
+ PRODUCTION_DB_PASSWORD: ''
+ PRODUCTION_DB_NAME: 'guestbook'
